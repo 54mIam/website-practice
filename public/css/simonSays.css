@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Passions+Conflict&display=swap');
+
+
+body {
+
+  text-align: center;
+ 
+  max-height: 1300vh;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#level-title {
+  
+  font-family: 'Barriecito', cursive;
+  font-weight:bolder;
+  font-size: 3rem;
+
+  color: #FEF2BF;
+  justify-content: center;
+  align-items: center;
+  height:50px ;
+}
+
+.container {
+  display: flex;
+ 
+  flex-direction: row;
+  width: 400px;
+  margin: auto;
+height: 400px;
+ 
+
+ 
+
+}
+.game-container{
+  display: flex;
+
+  flex-direction: column;
+  margin: 5px;
+  width: 100%;
+ 
+}
+
+.row {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  margin: 5px auto;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.btn {
+  margin: 10px;
+  display: inline-block;
+  height: 180px;
+  width: 180px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: #eb1313;
+opacity: 0.5;
+z-index: 99;
+  
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+
+@media screen and (max-width: 960px) {
+  .game-container {
+    width: 100%;
+    height: 70vh;
+ 
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+  .container {
+    width: 30%;
+    height: 60vh;
+    margin: 5px;
+  }
+
+  .btn {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  #level-title {
+    font-size: 3rem;
+   height: 40px;
+    margin: 5px;
+    padding: 0px;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  .game-container {
+    width: 100%;
+    height: 70vh;
+ 
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .container {
+    width: 50%;
+    height: 60vh;
+    margin:5px 5px;
+  }
+
+  .btn {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  #level-title {
+    font-size: 3rem;
+   height: 40px;
+    margin: 5px;
+    padding: 0px;
+  }
+ }
+

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Passions+Conflict&display=swap');
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    padding: 24px 24px;
+    max-width: 1300px;
+
+}
+.main-content .title{
+    font-size: 4em;
+    color: #a61ed8;
+    background-image: linear-gradient(to right, #a61ed8, #f8b500);
+    background-size: 100%;
+   background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    
+    margin-bottom: 24px;
+    text-align: center;
+}
+.main-content .paragraph{
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 24px;
+    text-align: center;
+
+    background-image: linear-gradient(to right, #a61ed8, #f8b500);
+    background-size: 100%;
+   background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.main-webpage-container{
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    padding: 24px 24px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.main-webpage-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 24px 24px;
+    max-width: 1300px;
+    height: 100%;
+    width: 100%;
+ height: 400px;
+ width: 100%;
+}
+.webpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  
+    color: #cd0b0b;
+    text-align: center;
+    padding: 50px 1rem;
+   
+  
+}
+
+.webpage-image{
+    width:200px;
+    height: 200px;
+    object-fit: cover;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px auto;
+}
+.main-webpage-container{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+   
+ 
+}
+.webpage-link{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+   
+    height: 100%;
+    justify-content: center;
+    height: 100%;
+}

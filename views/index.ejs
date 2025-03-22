@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fontawesome.com/kits/aeecb58b9d">
+    <link rel="stylesheet" href="./css/headerFooter.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <%-include('./partials/header')  %>
+
+    <div class="main">
+       
+
+        <div class="main-container">
+            <div class="main-content">
+                <h1 class="main title">Home Page</h1>
+                <p class="main paragraph">Welcome to the home page</p>
+               
+            </div>
+
+            
+            <div class="main-webpage-container">
+                <ul class="main-webpage-list">
+                    <% webPages.forEach((page) =>{ %>
+                     
+                            <li class="webpage"><img class="webpage-image"  src="./images/<%= page.image  %>" alt="auther"><a href="pages/<%= page.id  %>" class="webpage-link">
+                                <%= page.title %>
+                            </a></li>
+                        
+                     
+                        
+                        
+                        <%  }) %>
+                </ul>
+            
+            </div>
+        </div>
+       
+    </div>
+
+        <%-include('./partials/footer')  %>
+   
+
+</body>
+</html>

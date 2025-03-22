@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/headerFooter.css">
+    <link rel="stylesheet" href="/css/about.css">
+    
+    <title>About Me</title>
+</head>
+<body>
+    <%-include('partials/header')  %>
+<div class="about-header">
+
+        
+  
+    <h1 class="about-me-title"> About Me</h1>
+   
+
+    <div class="about-me-container">
+
+        <img class="about-me-image" src="../images/<%= auther.image  %>" alt="">
+        <p class="about-me-paragraph">
+            <%= auther.description  %>
+    </div>
+   
+
+
+
+ 
+</div>
+
+
+<%-include('partials/footer')  %>
+</body>
+</html>

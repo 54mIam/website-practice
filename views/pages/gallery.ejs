@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fontawesome.com/kits/aeecb58b9d">
+    <link rel="stylesheet" href="../css/headerFooter.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <title>Document</title>
+</head>
+<body>
+    <%-include('../partials/header')  %>
+
+<div class="gallery-page">
+
+    <div class="art-title-header">
+        <h1 class=" gallery-title">Art Gallery</h1>
+        <p class="gallery-paragraph">Welcome to the art page</p>
+    </div>
+    
+    
+    <div class="art-container">
+        <% images.forEach((image) => { %>
+            <div class="art-list">
+                <img class="art-img" src="../images/<%= image.image %>" alt="<%= image.title %>">
+                <div class="art-info">
+                    <h1 class="art-title">Title: <%= image.title %></h1>
+                    <p class="art-description">Description: <%= image.description %></p>
+                </div>
+              
+                <div class="commentSection">
+                    <div class=" art-comment-form">
+                        <form action="/comment" method="POST">
+                            <input type="hidden" name="imageId" value="<%= image.id %>">
+                            <label for="comment">Comment</label>
+                            <input type="text" id="comment" name="comment" required>
+                            <button type="submit">Comment</button>
+                        </form>
+                    </div>
+                   
+                    <% if (image.comments && image.comments.length > 0) { %>
+                        <h2>Comments</h2>
+                        <ul>
+                            <% image.comments.forEach((comment, index) => { %>
+                                <div class="art-comments">
+                                    <li><%= comment %>
+                                        <form action="/delete-comment" method="POST" style="display:inline;">
+                                            <input type="hidden" name="imageId" value="<%= image.id %>">
+                                            <input type="hidden" name="commentIndex" value="<%= index %>">
+                                            <button type="submit">Delete</button>
+                                        </form>
+                                    </li>
+                                </div>
+                               
+                            <% }) %>
+                        </ul>
+                    <% } %>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+    
+</div>
+
+
+
+
+
+
+<%-include('../partials/footer')  %>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../css/headerFooter.css">
+  <link rel="stylesheet" href="../css/game.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+
+       
+            <%-include('../partials/header')  %>
+
+            <div class="game-page">
+
+                <div class="game-header">
+
+                    <h1 class="game-title">Games</h1>
+                    <p class="game-paragraph">Welcome to the games page</p>
+                </div>
+
+
+                
+                        <ul class="game-container">
+                            <% projects.forEach((project) => { %>
+                                <li class="game-list">
+                                    <img class="game-image" src="/images/<%= project.image %>" alt="author">
+                                    <a href="/projects/<%= project.id %>" class="game-link">
+                                        <%= project.title %>
+                                    </a>
+                                </li>
+                                <% }) %>
+                        </ul>
+               
+            </div>
+              
+       
+            <%-include('../partials/footer')  %>
+
+
+
+
+
+</body>
+</html>

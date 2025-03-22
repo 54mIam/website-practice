@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Passions+Conflict&display=swap');
+
+
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dice {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+body {
+  background-color: #4c48bc;
+}
+
+h1 {
+  font-family: 'Barriecito', cursive;
+  font-weight:bolder;
+  
+  margin: 20px;
+  
+  text-shadow: 5px 0 #232931;
+  font-size: 3rem;
+  color: #504ecc;
+}
+
+p {
+  font-family: 'Barriecito', cursive;
+  font-weight:bolder;
+  
+  font-size: 2rem;
+  color: #9b0799;
+  
+}
+
+img {
+  width: 80%;
+}
+.dice-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px;
+}
+footer {
+  font-family: 'Barriecito', cursive;
+  font-weight:bolder;
+  
+  margin-top: 5%;
+  color: #9b4d4d;
+  text-align: center;
+
+
+}

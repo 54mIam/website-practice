@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Passions+Conflict&display=swap');
+
+body{
+    max-height: 2000vh;
+ 
+}
+
+.gallery-page{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 90%;
+    
+  
+}
+
+.art-title-header{
+    font-family: "Passions Conflict", cursive;
+    font-weight:bolder;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    color: #a61ed8;
+    background-image: linear-gradient(to right, #a61ed8, #f8b500);
+    background-size: 100%;
+   background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+   
+
+   
+
+}
+.art-container{
+    display: grid;
+   
+   
+    grid-template-columns: 1fr 1fr ;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.art-img{
+position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 0 auto;
+    
+    height: 200px;
+    width:200px;
+    
+}
+.art-list{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.art-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #8d7d51;
+    width: 60%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: #a61ed8;
+    background-image: linear-gradient(to right, #d7a4ea, #f1d483);
+    background-size: 100%;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    
+}
+
+.commentSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #8d7d51;
+    width: 70%;
+    padding: 10px 10px;
+    color: #a61ed8;
+    background-image: linear-gradient(to right, #b61eee, #f3b50c);
+    background-size: 100%;
+
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    .art-container{
+        grid-template-columns: 1fr;
+    }
+    .art-img{
+        height: 150px;
+        width:150px;
+    }
+    .art-info{
+        width: 80%;
+    }
+    .commentSection{
+        width: 90%;
+    }
+    
+}

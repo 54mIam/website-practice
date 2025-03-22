@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Passions+Conflict&display=swap');
+
+body{
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin:0px auto;
+   
+}
+
+.contact-me{
+    position: relative;
+    top: -50px;
+    font-size: 5rem;
+    font-family: "Passions Conflict", cursive;
+  font-weight:bolder;
+  font-style: normal;
+  background-color: rgba(207, 207, 220, 0.68);
+  background-image:
+   linear-gradient(to bottom, rgba(255, 16, 155, 0.68)
+    10%, rgba(156, 4, 227, 0.68)60%);
+  background-size: 100%;
+  background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+   width: 100%;
+   text-align: center;
+   margin: 5px 5px;
+   padding: 0 auto;
+}
+.contact-paragraph{
+    position: relative;
+    top: -40px;
+    font-size: 1rem;
+    width: 400px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 2px 0 20px 0;
+    padding: 2px 0px;
+    font-family: 'Barriecito', cursive;
+    background-color: rgba(103, 103, 233, 0.266);
+    background-image:
+     linear-gradient(to bottom, rgba(234, 110, 182, 0.29)
+      10%, rgba(202, 110, 235, 0.157)60%);
+    background-size: 100%;
+    color: rgb(5, 5, 78);
+    border  :none;
+}
+.contact-form{
+ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 3fr);
+    
+    align-items: center;
+    justify-content:space-between;
+    justify-items: center;
+    width: 100%;
+    max-width:1000px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+.submit-btn{
+    background-color: rgb(5, 5, 78);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Barriecito', cursive;
+    font-weight: bolder;
+  
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+}
