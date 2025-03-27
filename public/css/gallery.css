@@ -110,7 +110,20 @@ position: relative;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
-
+.art-comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #b61eee, #f3b50c);
+    background-size: 100%;
+    width: 70%;
+    padding: 10px 10px;
+    color: #b997c5;
+    text-decoration: none;
+    
+}
 @media screen and (max-width: 600px) {
     .art-container{
         grid-template-columns: 1fr;
@@ -127,3 +140,23 @@ position: relative;
     }
     
 }
+
+@media screen and (max-width: 490px)and (max-height:848px) {
+    .art-title-header{
+        font-size: 2em;
+    }
+    .art-container{
+        grid-template-columns: 1fr;
+    }
+    .art-img{
+        height: 150px;
+        width:150px;
+    }
+    .art-info{
+        width: 80%;
+    }
+    .commentSection{
+        width: 90%;
+    }
+    
+}   

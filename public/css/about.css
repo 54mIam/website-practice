@@ -122,3 +122,57 @@ font-size: 7rem;
      -moz-text-fill-color: transparent;
   
 }
+
+@media screen and (max-width: 490px)and (max-height:848px) {
+   
+    .main{
+        height: 69vh;
+        width: 100%;
+     }
+        .main-container{
+           height: 75%;
+            width: 100%;
+            position: relative;
+            margin: 25px auto;
+         
+            display: flex;
+            flex-direction: column;
+            
+          
+    
+        } 
+        .main-content{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 30%;
+           margin: 25px auto;
+            width: 100%;
+            
+        } 
+        .main-title{
+            font-size: 3em;
+            color: #a61ed8;
+            background-image: linear-gradient(to right, #a61ed8, #f8b500);
+            background-size: 100%;
+           background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        } 
+        .main-paragraph{
+            font-size: 2em;
+           
+            
+            text-align: center;
+            background-image: linear-gradient(to right, #a61ed8, #f8b500);
+            background-size: 100%;
+           background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+         }
