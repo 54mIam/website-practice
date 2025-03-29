@@ -25,7 +25,7 @@ body{
     font-style: normal;
     justify-content: center;
     align-items: center;
-    font-size: 4em;
+    font-size: 3em;
     color: #a61ed8;
     background-image: linear-gradient(to right, #a61ed8, #f8b500);
     background-size: 100%;
@@ -98,17 +98,11 @@ position: relative;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: #8d7d51;
-    width: 70%;
-    padding: 10px 10px;
-    color: #a61ed8;
-    background-image: linear-gradient(to right, #b61eee, #f3b50c);
-    background-size: 100%;
-
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+   
+    color: black;
+}
+.art-comment-form{
+    color: black;
 }
 .art-comments{
     display: flex;
@@ -122,9 +116,21 @@ position: relative;
     padding: 10px 10px;
     color: #b997c5;
     text-decoration: none;
+    background-size: 100%;
+
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+
     
 }
 @media screen and (max-width: 600px) {
+    .art-title-header{
+        font-size: 2em;
+    }
+
     .art-container{
         grid-template-columns: 1fr;
     }
@@ -141,7 +147,7 @@ position: relative;
     
 }
 
-@media screen and (max-width: 490px)and (max-height:848px) {
+@media screen and (max-width: 490px) {
     .art-title-header{
         font-size: 2em;
     }

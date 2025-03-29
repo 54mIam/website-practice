@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Passions+Conflict&display=swap');
 
-body{
-   
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 71vh;
     margin:0px auto;
    
 }
@@ -25,9 +20,7 @@ body{
   font-weight:bolder;
   font-style: normal;
   background-color: rgba(207, 207, 220, 0.68);
-  background-image:
-   linear-gradient(to bottom, rgba(255, 16, 155, 0.68)
-    10%, rgba(156, 4, 227, 0.68)60%);
+   background-image: linear-gradient(to right, #a61ed8, #f8b500);
   background-size: 100%;
   background-clip: text;
    -moz-background-clip: text;
@@ -41,20 +34,34 @@ body{
 .contact-paragraph{
     position: relative;
     top: -40px;
-    font-size: 1rem;
-    width: 400px;
-    font-weight: bolder;
-    text-align: center;
-    margin: 2px 0 20px 0;
-    padding: 2px 0px;
-    font-family: 'Barriecito', cursive;
+   
+    width:400px;
+  
+    margin: 2px 20px 2px 20px;
+    padding: 2px 0;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(103, 103, 233, 0.266);
     background-image:
-     linear-gradient(to bottom, rgba(234, 110, 182, 0.29)
+     linear-gradient(to bottom, rgba(237, 11, 143, 0.29)
       10%, rgba(202, 110, 235, 0.157)60%);
     background-size: 100%;
-    color: rgb(5, 5, 78);
+    
+    color: rgb(121, 121, 231);
     border  :none;
+}
+
+.contact-me-paragraph{
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgba(103, 103, 233, 0.266);
+      background-image: linear-gradient(to right, #c34aef, #f8b500);
+    background-size: 100%;
+    background-size: 100%;
+    background-clip: text;
+     -moz-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -moz-text-fill-color: transparent;
 }
 .contact-form{
  
@@ -85,4 +92,38 @@ body{
     text-align: center;
     justify-content: center;
     width: 300px;
+}
+
+@media screen and (max-width: 690px){
+  
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 79vh;
+        margin:0px auto;
+        width: 100%;
+
+     
+              
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: rgba(161, 112, 14, 0.275);
+    }
+.contact-paragraph{
+    
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
 }

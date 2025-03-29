@@ -10,18 +10,27 @@
 </head>
 <body>
     <%-include('partials/header')  %>
-<div class="about-header">
+<div class="main-container">
 
-        
+        <div class="header-container">
+            <h1 class="about-me-title"> About Me</h1>
+
+        </div>
   
-    <h1 class="about-me-title"> About Me</h1>
    
 
-    <div class="about-me-container">
+    <div class="about-container">
 
-        <img class="about-me-image" src="../images/<%= auther.image  %>" alt="">
+        <div class="image-container">
+            <img class="about-me-image" src="../images/<%= auther.image  %>" alt="">
+       
+        </div>
+
+        <div class="description-container">
         <p class="about-me-paragraph">
-            <%= auther.description  %>
+            <%= auther.description  %> </p>
+       </div>
+        
     </div>
    
 

@@ -2,54 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Passions+Conflict&display=swap');
- body{
 
-    background-color: rgb(145, 77, 209);
-    background-image: linear-gradient(to right, 
-    rgb(145, 77, 209), rgba(0, 0, 0, 0.91));
-    max-height: 100vh;
-  
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
- }
-
- .navbar{
-    background-color: rgba(216, 9, 195, 0.242);
-    display: flex;
-    height:10vh;
-    justify-content:space-evenly;
-    align-items: center;
-    font-size: 1.2rem;
-    position: relative;
-    top: 0;
-    z-index:999;
-}
-
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: auto;
-    width: 100%;
-    z-index: 1;
-    max-width: 1300px;
-    padding: 0 50px;
-    height: 80px;
-    margin: 0 ;
-  
-    
-
-}
-
-.about-header{
+.main-container{
   position: relative;
  
   display: flex;
   flex-direction: column;
-    background-color: #0374e5;
-    background-image: linear-gradient(to right, 
-    #8f0666 10%, #592af5 50%, rgb(83, 6, 83) 80%); ;
    
     font:bold, cursive; 
    
@@ -58,26 +16,24 @@
    
     
     padding: 5px 3px;
-    height: 100%;
+    height: 70vh;
+    width: 100%;
 }
 
-.about-me-container{
+.about-container{
+    position: inherit;
+   
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   
   
-    background-color: rgba(207, 207, 220, 0.68);
-    background-image:
-     linear-gradient(to bottom, rgba(255, 16, 155, 0.68)
-      10%, rgba(156, 4, 227, 0.68)60%);
-    background-size: 100%;
-    background-clip: text;
-     -moz-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     -moz-text-fill-color: transparent;
-     height: 100%;
+   
+     height: 70%;
+     width: 80%;
+     margin: 10px auto;
+     padding: 10px 10px;
   
 }
 
@@ -86,10 +42,8 @@ font-size: 7rem;
     font-family: "Passions Conflict", cursive;
   font-weight:bolder;
   font-style: normal;
-  background-color: rgba(207, 207, 220, 0.68);
-  background-image:
-   linear-gradient(to bottom, rgba(255, 16, 155, 0.68)
-    10%, rgba(156, 4, 227, 0.68)60%);
+  background-color: rgba(161, 5, 228, 0.68);
+  background-image: linear-gradient(to right, #a61ed8, #f8b500);
   background-size: 100%;
   background-clip: text;
    -moz-background-clip: text;
@@ -97,24 +51,31 @@ font-size: 7rem;
    -moz-text-fill-color: transparent;
    width: 100%;
    text-align: center;
-   margin: 10px 5px;
+   margin: 1px 5px;
    padding: 0 auto;
+}
+
+.image-container{
+    justify-items: center;
+    align-items: center;
+    width: 190px;
+    height: 100%;
+  
+   
 }
 
 .about-me-image{
     border-radius: 10%;
-    width: 200px;
-    height: 400px;
+    width: 120px;
+    height: 230px;
    
 }
 .about-me-paragraph{
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 400px;
-    height: fit-content;
+    height: 200px;
     background-color: rgba(207, 207, 220, 0.68);
-    background-image:
-     linear-gradient(to bottom, rgba(235, 102, 179, 0.68)
-      10%, rgba(228, 200, 241, 0.68)60%);
+    background-image: linear-gradient(to right, #c253ea, #f8b500);
     background-size: 100%;
     background-clip: text;
      -moz-background-clip: text;
@@ -123,56 +84,74 @@ font-size: 7rem;
   
 }
 
-@media screen and (max-width: 490px)and (max-height:848px) {
+
+
+
+@media screen and (max-width: 690px) {
    
-    .main{
-        height: 69vh;
-        width: 100%;
-     }
+    
         .main-container{
-           height: 75%;
+         
             width: 100%;
+            height:80vh;
             position: relative;
-            margin: 25px auto;
+        
+        } 
+        .header-container{
+
+            width: 100%;
+            height: 10vh;
+            position: relative;
+           
          
             display: flex;
             flex-direction: column;
-            
-          
-    
-        } 
-        .main-content{
-            
-            display: flex;
+        }
+        .about-me-title{
+            font-size: 3.5em;
+
+           
+        }
+        .about-container{
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 30%;
-           margin: 25px auto;
+            align-items:center ;
             width: 100%;
-            
-        } 
-        .main-title{
-            font-size: 3em;
-            color: #a61ed8;
-            background-image: linear-gradient(to right, #a61ed8, #f8b500);
-            background-size: 100%;
-           background-clip: text;
-            -moz-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-text-fill-color: transparent;
-        } 
-        .main-paragraph{
-            font-size: 2em;
-           
-            
-            text-align: center;
-            background-image: linear-gradient(to right, #a61ed8, #f8b500);
-            background-size: 100%;
-           background-clip: text;
-            -moz-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            height: 500px;
+            margin: 0 auto;
+            padding: 0 auto;}
 
-        }
+
+            .description-container{
+              
+              
+                margin: 0 auto;
+                padding: 1px 1px;
+            }
+         
+        
          }
+
+         @media screen and (max-width: 505px){
+
+          .main-container{
+            width: 100%;
+           
+            position: relative;
+           
+         
+            display: flex;
+            flex-direction: column;
+           
+          }
+          .header-container
+          {
+            width: 100%;
+            height: 10vh;
+            position: relative;
+           
+         
+            display: flex;
+            flex-direction: column;
+          }
+        }

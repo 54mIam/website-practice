@@ -14,24 +14,34 @@
    
     <%-include('./partials/header')  %>
 
-    <div class="main">
+    
        
 
         <div class="main-container">
-            <div class="main-content">
-                <h1 class="main-title">Home Page</h1>
-                <p class="main-paragraph">Welcome to the home page</p>
+            <div class="page-info">
+                <div class="index-title">
+                    <h1 class="main-title">Home Page</h1>
+
+                </div>
+                <div class="index-paragraph">
+                    <p class="main-paragraph">Welcome to the home page</p>
+                </div> 
+               
                
             </div>
 
             
-            <div class="main-webpage-container">
+            <div class="webpage-container">
                 <ul class="main-webpage-list">
                     <% webPages.forEach((page) =>{ %>
-                     
-                            <li class="webpage"><img class="webpage-image"  src="./images/<%= page.image  %>" alt="auther"><a href="pages/<%= page.id  %>" class="webpage-link">
-                                <%= page.title %>
-                            </a></li>
+                     <div class="webpage-thumb">
+                        <li class="webpage">
+                            <img class="webpage-image"  src="./images/<%= page.image  %>" alt="auther"><a href="pages/<%= page.id  %>" class="webpage-link">
+                            <%= page.title %>
+                        </a></li>
+
+                     </div>
+                            
                         
                      
                         
@@ -42,7 +52,7 @@
             </div>
         </div>
        
-    </div>
+    
 
         <%-include('./partials/footer')  %>
    
