@@ -8,7 +8,7 @@ dotenv.config();
 
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -76,15 +76,9 @@ const webPages = [
         },
         {
             id:"games", 
-            image:"auther.jpeg",
+            image:"gameScreeen.png",
             
-            title:"Game Lab"},
-        {
-                id:"jsProjects",
-                image:"auther.jpeg",
-                title:"JavaScript Projects",
-            
-        }
+            title:"Game Lab"}
     ]
 const projects =[
             {id:'dicee',
