@@ -63,6 +63,11 @@ position: relative;
     width:200px;
     
 }
+.art-img:active{
+    transform: scale(2.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
 .art-list{
     margin: 10px 10px;
     display: flex;

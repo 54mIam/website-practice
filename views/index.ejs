@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="https://fontawesome.com/kits/aeecb58b9d">
     <link rel="stylesheet" href="./css/headerFooter.css">
     <link rel="stylesheet" href="./css/index.css">
-    <title>S!r-KayS Portfollio Website</title>
+    <title>S!r KayS Portfollio Website</title>
+
+    <style>
+        .hide {
+            display: none;
+        }
+
+      
+    </style>
 </head>
 <body>
    
@@ -20,18 +28,23 @@
         <div class="main-container">
             <div class="page-info">
                 <div class="index-title">
-                    <h1 class="main-title">Home Page</h1>
-
+                    <a href="/"class="index-logo" id="index-logo"><i class="fa-solid fa-headphones"></i>sIr-kAyos</a>
+           
                 </div>
                 <div class="index-paragraph">
-                    <p class="main-paragraph">Welcome to the home page</p>
+                    <p class="main-paragraph">New Era view...  </p>
+                    <p class="main-paragraph">...DesIgnIng Done right </p>
+                    <p class="main-paragraph">Taking Your Deepest DESIRES... </p>
+                    <p class="main-paragraph">....As if Calling YOUr name</p>
+
+
                 </div> 
-               
+              <button class="index-btn">Get Started</button>
                
             </div>
 
             
-            <div class="webpage-container">
+            <div class="webpage-container hide"> ">
                 <ul class="main-webpage-list">
                     <% webPages.forEach((page) =>{ %>
                      <div class="webpage-thumb">
